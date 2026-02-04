@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Will you be my Valentine?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page" id="page">
+    <div class="card" role="dialog" aria-labelledby="title" aria-describedby="desc">
+      <h1 id="title">Nina Will you be my Valentine? ❤️</h1>
+      <p id="desc"></p>
+
+      <div class="buttons" id="buttonArea">
+        <button id="yesBtn" class="btn btn-yes" data-action="yes">Yes 💕</button>
+        <button id="noBtn" class="btn btn-no" data-action="no" aria-hidden="false">No 😅</button>
+      </div>
+    </div>
+
+    <div id="celebration" class="celebration" aria-hidden="true"></div>
+
+    <div id="videoModal" class="video-modal" aria-hidden="true" role="dialog" aria-labelledby="vidTitle" aria-describedby="vidDesc">
+      <div class="video-content" role="document">
+        <h2 id="vidTitle" class="sr-only">Celebration video</h2>
+        <video id="celebrationVideo" playsinline preload="auto" tabindex="0" src="oE4CXliPQIBwU5PADPdwfQi006EHILsBpHhUgA.mp4"></video>
+        <button id="closeVideo" class="btn btn-close" aria-label="Close celebration">Close ✕</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
